@@ -40,10 +40,6 @@ for i in range(0,n):
 	list.append(0)
 	list[i] = int(input())
 
-print("Entered data is")
-for i in range(0,n):
-	print(list[i], end=" ")
-
 mergesort(list, n)
 
 print("\nThe sorted array is :")
