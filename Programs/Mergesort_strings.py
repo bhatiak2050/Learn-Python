@@ -23,19 +23,15 @@ def mergesort(names):
 	left = []
 	right = []
 
-
 	for i in range(0, mid):
 		left.append(names[i])
 
 	for i in range(mid, n):
 		right.append(names[i])
 
-	print(left,right)
-
 	mergesort(left)
 	mergesort(right)
 	merge(left, mid, right, n-mid, names)
-	print(left,right)
 
 names = []
 name = input("Enter the names ('done' to stop)\n")
