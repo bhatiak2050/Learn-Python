@@ -35,8 +35,9 @@ def prims(nv, graph):
 
 #Main block
 #nv = int(input("Enter the number of vertices: "))
-inhand = open('input_file_name_here')
-outhand = open('output_file_name_here', 'w')
+fname = input("Enter the file name: ")
+inhand = open(fname)
+outhand = open('output', 'w')
 nv = int(inhand.readline())
 graph = [0] * nv
 #print("Enter the matrix: ")
