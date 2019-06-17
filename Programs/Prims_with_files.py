@@ -50,3 +50,5 @@ for i in range(nv):
 		else: graph[i][j] = int(inhand.readline())
 
 prims(nv, graph)
+inhand.close()
+outhand.close()
