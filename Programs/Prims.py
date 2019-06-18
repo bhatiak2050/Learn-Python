@@ -32,14 +32,14 @@ def prims(nv, graph):
 	print("The cost is %d" % cost)
 
 #Main block
-nv = int(input("Enter the number of vertices: "))
+nv = int(input("Enter the number of vertices in the graph: "))
 graph = [0] * nv
-print("Enter the matrix: ")
+print("Enter the adjacency matrix of the graph: ")
 
 for i in range(nv):
 	graph[i] = [0] * nv
 	for j in range(nv):
-		if i == j: graph[i][j] = 999
+		if i == j: graph[i][j] = INT_MAX
 		else: graph[i][j] = int(input())
 
 prims(nv, graph)
